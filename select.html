@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="vue.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="app">
+        <div class="select-box">
+            <!--<div class="select-input">-->
+            <!--<input type="text" @focus="focus" v-model="title" >-->
+            <!--</div>-->
+            <custom-input @customevent="aa" :title="title"></custom-input>
+            <custom-list :list-data="datas" color="#000" :state="state" @customevent="bb"></custom-list>
+            <!--<ul class="select-list" v-show="status==true">-->
+            <!--<li v-for="item in datas">{{item.title}}</li>-->
+            <!--</ul>-->
+        </div>
+    </div>
+    <script src="components.js"></script>
+    <script src="app.js"></script>
+
+
+</body>
+</html>
